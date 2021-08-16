@@ -1,0 +1,175 @@
+* {
+  margin: 0; }
+
+/* ESTILO DE HEADER */
+header {
+  background-image: linear-gradient(0deg, #0e0d0d, #4b4848); }
+  header .cajaArriba {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  header .logoEncabezado {
+    height: 15%;
+    width: 15%; }
+  header .linkLogo {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+  header .listaNav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin: 0;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.15; }
+  header ul {
+    list-style-type: none; }
+  header li {
+    margin-left: 10px;
+    margin-right: 10px; }
+  header a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw; }
+
+/* ESTILO DE MAIN */
+main {
+  background-color: #2e2e2e;
+  height: 100%;
+  /* TITULOS */
+  /* INDEX */
+  /* HAMBURGUESAS */
+  /* ZONAS DE REPARTO */
+  /* SOBRE NOSOTROS */
+  /* CONTACTO */ }
+  main .titulos {
+    font-style: normal;
+    font-size: 2vw;
+    text-align: center;
+    color: black;
+    font-family: 'Hind', sans-serif;
+    padding-top: 10px; }
+  main h2 {
+    font-style: initial;
+    font-size: 1.7vw;
+    font-family: 'Hind', sans-serif;
+    text-align: center; }
+  main .container {
+    padding: 20px; }
+  main #carouselExampleCaptions {
+    margin-left: 20%;
+    margin-right: 20%; }
+  main .nombresBurger {
+    font-style: initial;
+    font-size: 1.7vw;
+    font-family: 'Hind', sans-serif;
+    text-align: center; }
+  main .barrios {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .cajaNosotrosUno {
+    display: block;
+    height: 100px;
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px; }
+    main .cajaNosotrosUno h2 {
+      color: #b4b4b4;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 1.8vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+    main .cajaNosotrosUno .textoInfo {
+      color: #969696;
+      margin-top: 20px;
+      font-style: normal;
+      font-size: 1.5vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+  main .cajaNosotrosDos {
+    display: block;
+    height: 100px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px; }
+    main .cajaNosotrosDos h2 {
+      color: #b4b4b4;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 1.8vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+    main .cajaNosotrosDos .textoInfo {
+      color: #969696;
+      margin-top: 20px;
+      font-style: normal;
+      font-size: 1.5vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+  main .grillaContacto {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "area1 area2 area3" "area1 . area3";
+    justify-items: center; }
+    main .grillaContacto .cajaContacto {
+      grid-area: area2; }
+    main .grillaContacto .cajaContactoUno {
+      grid-area: area1;
+      background-color: #696e73;
+      border: solid black;
+      width: 80%;
+      height: 80%; }
+      main .grillaContacto .cajaContactoUno .textoContacto {
+        font-style: normal;
+        font-size: 1.5vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        margin-top: 50px; }
+      main .grillaContacto .cajaContactoUno .tituloVias {
+        font-style: initial;
+        font-size: 1.6vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center;
+        margin-top: 50px; }
+    main .grillaContacto .cajaContactoDos {
+      grid-area: area3;
+      background-color: #696e73;
+      border: solid black;
+      width: 80%;
+      height: 80%; }
+      main .grillaContacto .cajaContactoDos .textoContacto {
+        font-style: normal;
+        font-size: 1.5vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        margin-top: 50px; }
+      main .grillaContacto .cajaContactoDos .tituloVias {
+        font-style: initial;
+        font-size: 1.6vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center;
+        margin-top: 50px; }
+
+/* ESTILO DE FOOTER */
+footer {
+  background-image: linear-gradient(#0e0d0d, #4b4848);
+  height: 100px; }
+  footer .logosFooter {
+    display: flex;
+    height: 50%;
+    width: 5%; }
