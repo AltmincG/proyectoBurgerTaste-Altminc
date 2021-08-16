@@ -1,6 +1,7 @@
 * {
   margin: 0; }
 
+/* VARIABLES */
 /* ESTILO DE HEADER */
 header {
   background-image: linear-gradient(0deg, #0e0d0d, #4b4848); }
@@ -167,7 +168,7 @@ main {
 
 /* ESTILO DE FOOTER */
 footer {
-  background-image: linear-gradient(#0e0d0d, #4b4848);
+  background-image: linear-gradient(0deg, #0e0d0d, #4b4848);
   height: 100px; }
   footer .logosFooter {
     display: flex;
