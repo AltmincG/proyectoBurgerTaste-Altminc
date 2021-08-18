@@ -76,13 +76,49 @@ main {
     font-family: 'Hind', sans-serif;
     text-align: center; }
   main .grillaBarrios {
-    margin-top: 30px;
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: 45% 10% 45%;
-    grid-template-rows: 500px 500px 500px;
-    grid-template-areas: "area1 area2 area3" "area4  area5 area 6" "area 7 area 8 area9"; }
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: "area1 area2 area3" "area4 area5 area6";
+    justify-items: center;
+    align-items: center; }
     main .grillaBarrios .barrioAguada {
-      grid-area: area1; }
+      grid-area: area1;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioAguada img {
+        border: solid white; }
+    main .grillaBarrios .barrioCentro {
+      grid-area: area2;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioCentro img {
+        border: solid white; }
+    main .grillaBarrios .barrioCordon {
+      grid-area: area3;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioCordon img {
+        border: solid white; }
+    main .grillaBarrios .barrioGoes {
+      grid-area: area4;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioGoes img {
+        border: solid white; }
+    main .grillaBarrios .barrioTresCruces {
+      grid-area: area5;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioTresCruces img {
+        border: solid white; }
+    main .grillaBarrios .barrioReducto {
+      grid-area: area6;
+      width: 70%;
+      height: 90%; }
+      main .grillaBarrios .barrioReducto img {
+        border: solid white; }
   main .cajaNosotrosUno {
     display: block;
     height: 100px;

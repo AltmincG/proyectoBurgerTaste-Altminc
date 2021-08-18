@@ -5,6 +5,7 @@
 /* VARIABLES */
 $colorFondosArribaAbajo: (0deg, rgb(14, 13, 13), rgb(75, 72, 72));
 $colorTitulos: black;
+$bordeBarrios: solid white;
 
 /* ESTILO DE HEADER */
 header{
@@ -105,32 +106,63 @@ main{
     }
     /* ZONAS DE REPARTO */
     .grillaBarrios{
-        margin-top: 30px;
+        margin-top: 20px;
         display: grid;
-        grid-template-columns: 45% 10% 45%;
-        grid-template-rows: 500px 500px 500px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 500px 500px;
         grid-template-areas: "area1 area2 area3"
-                            "area4  area5 area6"
-                            "area7 area8 area9";
+                            "area4 area5 area6";
         .barrioAguada{
             grid-area: area1;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
         .barrioCentro{
-            grid-area: area3;
+            grid-area: area2;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
         .barrioCordon{
-            grid-area: area4;
+            grid-area: area3;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
         .barrioGoes{
-            grid-area: area6;
+            grid-area: area4;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
         .barrioTresCruces{
-            grid-area: area7;
+            grid-area: area5;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
         .barrioReducto{
-            grid-area: area9;
+            grid-area: area6;
+            width: 70%;
+            height: 90%;
+            img{
+                border: $bordeBarrios;
+            }
         }
-
+        justify-items: center;
+        align-items: center;
+    }
     /* SOBRE NOSOTROS */
     @mixin textos($colorTexto , $tamanioTexto , $margenTop){
 
@@ -243,6 +275,6 @@ footer{
         height: 50%;
         width: 5%;
     }
-
+    
 
 }
