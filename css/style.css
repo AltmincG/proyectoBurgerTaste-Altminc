@@ -75,11 +75,14 @@ main {
     font-size: 1.7vw;
     font-family: 'Hind', sans-serif;
     text-align: center; }
-  main .barrios {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+  main .grillaBarrios {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-areas: "area1 area2 area3" "area4  area5 area 6" "area 7 area 8 area9"; }
+    main .grillaBarrios .barrioAguada {
+      grid-area: area1; }
   main .cajaNosotrosUno {
     display: block;
     height: 100px;
