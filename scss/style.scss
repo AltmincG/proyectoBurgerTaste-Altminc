@@ -6,6 +6,19 @@
 $colorFondosArribaAbajo: (0deg, rgb(14, 13, 13), rgb(75, 72, 72));
 $colorTitulos: black;
 $bordeBarrios: solid white;
+$anchoBarrios: 70%;
+$altoBarrios: 90%;
+
+/* MIXINS */
+@mixin textos($colorTexto , $tamanioTexto , $margenTop){
+
+    color: $colorTexto;
+    margin-top: $margenTop;
+    font-style: normal;
+    font-size: $tamanioTexto;
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
 
 /* ESTILO DE HEADER */
 header{
@@ -89,10 +102,32 @@ main{
     }
 
     /* INDEX */
-    .container{
-        padding: 20px;
+    .grillaIndex{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: area1 area2
+                             area3 area4;
+        .indexFrase{
+            font-style: normal;
+            font-size: 2vw;
+            text-align: center;
+            color: $colorTitulos;
+            font-family: 'Hind', sans-serif;
+            padding-top: 10px;
+        }
+        .indexAmericana{
+            width: 80%;
+            height: 100%;
+        }
+        .indexCheese{
+            width: 80%;
+            height: 100%;
+        }
+        justify-items: center;
+        align-items: center;
     }
-
     /* HAMBURGUESAS */
     #carouselExampleCaptions{
         margin-left: 20%;
@@ -114,48 +149,48 @@ main{
                             "area4 area5 area6";
         .barrioAguada{
             grid-area: area1;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
         }
         .barrioCentro{
             grid-area: area2;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
         }
         .barrioCordon{
             grid-area: area3;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
         }
         .barrioGoes{
             grid-area: area4;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
         }
         .barrioTresCruces{
             grid-area: area5;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
         }
         .barrioReducto{
             grid-area: area6;
-            width: 70%;
-            height: 90%;
+            width: $anchoBarrios;
+            height: $altoBarrios;
             img{
                 border: $bordeBarrios;
             }
@@ -164,15 +199,6 @@ main{
         align-items: center;
     }
     /* SOBRE NOSOTROS */
-    @mixin textos($colorTexto , $tamanioTexto , $margenTop){
-
-        color: $colorTexto;
-        margin-top: $margenTop;
-        font-style: normal;
-        font-size: $tamanioTexto;
-        font-family: 'Hind', sans-serif;
-        text-align: center;
-    }
     .cajaNosotrosUno{
         display: block;
         height: 100px;
@@ -277,4 +303,8 @@ footer{
     }
     
 
+
+    
+    
 }
+

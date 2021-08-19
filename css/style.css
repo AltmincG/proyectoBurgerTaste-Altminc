@@ -2,6 +2,7 @@
   margin: 0; }
 
 /* VARIABLES */
+/* MIXINS */
 /* ESTILO DE HEADER */
 header {
   background-image: linear-gradient(0deg, #0e0d0d, #4b4848); }
@@ -65,8 +66,27 @@ main {
     font-size: 1.7vw;
     font-family: 'Hind', sans-serif;
     text-align: center; }
-  main .container {
-    padding: 20px; }
+  main .grillaIndex {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: area1 area2 area3 area4;
+    justify-items: center;
+    align-items: center; }
+    main .grillaIndex .indexFrase {
+      font-style: normal;
+      font-size: 2vw;
+      text-align: center;
+      color: black;
+      font-family: 'Hind', sans-serif;
+      padding-top: 10px; }
+    main .grillaIndex .indexAmericana {
+      width: 80%;
+      height: 100%; }
+    main .grillaIndex .indexCheese {
+      width: 80%;
+      height: 100%; }
   main #carouselExampleCaptions {
     margin-left: 20%;
     margin-right: 20%; }
