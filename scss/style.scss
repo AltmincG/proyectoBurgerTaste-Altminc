@@ -3,7 +3,7 @@
 }
 
 /* VARIABLES */
-$colorFondosArribaAbajo: (0deg, rgb(14, 13, 13), rgb(75, 72, 72));
+$colorFondosArribaAbajo: (0deg, rgb(41, 39, 39), rgb(116, 114, 114));
 $colorTitulos: black;
 $bordeBarrios: solid white;
 $anchoBarrios: 70%;
@@ -203,28 +203,38 @@ main{
         display: block;
         height: 100px;
         margin: 50px;
-        margin-left: 100px;
-        margin-right: 100px;
-        h2{
-            @include textos(rgb(180, 180, 180), 1.8vw, 10px )
+        margin-left: 150px;
+        margin-right: 150px;
+        .cajaTituloN{
+            .tituloNosotros{
+                @include textos(rgb(180, 180, 180), 1.8vw, 10px )
+            }
         }
-        .textoInfo{
-            @include textos(rgb(150, 150, 150), 1.5vw , 20px )
+        .cajaTextoN{
+            .textoInfo{
+                @include textos(rgb(150, 150, 150), 1.5vw , 20px )
+            }
         }
+        
     }
     .cajaNosotrosDos{
         display: block;
         height: 100px;
-        padding-bottom: 50px;
-        margin-left: 100px;
-        margin-right: 100px;
-        h2{
-            @include textos(rgb(180, 180, 180), 1.8vw , 10px)
+        padding-bottom: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+        .cajaTituloNDos{
+            .tituloNosotros{
+                @include textos(rgb(180, 180, 180), 1.8vw , 10px)
+            }
         }
-        .textoInfo{
-            @include textos(rgb(150, 150, 150), 1.5vw , 20px)
+        .cajaTextoNDos{
+            .textoInfo{
+                @include textos(rgb(150, 150, 150), 1.5vw , 20px)
+            }
         }
     }
+        
 
     /* CONTACTO */ 
     .grillaContacto{
@@ -301,10 +311,6 @@ footer{
         height: 50%;
         width: 5%;
     }
-    
-
-
-    
-    
+ 
 }
 
