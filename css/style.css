@@ -32,15 +32,21 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     line-height: 1.15; }
-    header .listaNav li {
-      margin-left: 10px;
-      margin-right: 10px; }
-    header .listaNav a {
+    header .listaNav li a {
       text-decoration: none;
-      color: white;
+      color: #eee4e4;
       font-style: normal;
       font-family: 'Ubuntu', sans-serif;
-      font-size: 1vw; }
+      font-size: 1.2vw;
+      padding-right: 10px;
+      padding-left: 10px; }
+    header .listaNav li a:hover {
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      font-style: normal;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.2vw; }
 
 /* ESTILO DE MAIN */
 main {
@@ -57,7 +63,8 @@ main {
     font-size: 2vw;
     text-align: center;
     color: black;
-    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-family: 'Ubuntu';
     padding-top: 10px; }
   main h2 {
     font-style: initial;
@@ -188,11 +195,10 @@ main {
       grid-area: area2; }
     main .grillaContacto .cajaContactoUno {
       grid-area: area1;
-      background-color: #696e73;
-      border: solid black;
       width: 80%;
       height: 80%; }
       main .grillaContacto .cajaContactoUno .textoContacto {
+        color: #b4b4b4;
         font-style: normal;
         font-size: 1.5vw;
         font-family: 'Ubuntu', sans-serif;
@@ -206,11 +212,10 @@ main {
         margin-top: 50px; }
     main .grillaContacto .cajaContactoDos {
       grid-area: area3;
-      background-color: #696e73;
-      border: solid black;
       width: 80%;
       height: 80%; }
       main .grillaContacto .cajaContactoDos .textoContacto {
+        color: #b4b4b4;
         font-style: normal;
         font-size: 1.5vw;
         font-family: 'Ubuntu', sans-serif;

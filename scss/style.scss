@@ -29,6 +29,7 @@ header{
         justify-content: center;
         height: 100%;
         width: 100%;
+
         .linkLogo{
             display: flex;
             align-items: center;
@@ -53,24 +54,27 @@ header{
         font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         line-height: 1.15;
-        
-        li{
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    
-        a{
-            text-decoration: none;
-            color: white;
-            font-style: normal;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1vw;
-            
-        }
-        
-    }
-    
 
+        li{
+            a{
+                text-decoration: none;
+                color: rgb(238, 228, 228);
+                font-style: normal;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.2vw;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            a:hover{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                font-style: normal;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.2vw;
+            }
+        }
+    }
     
 }
 /* ESTILO DE MAIN */
@@ -85,7 +89,8 @@ main{
         font-size: 2vw;
         text-align: center;
         color: $colorTitulos;
-        font-family: 'Hind', sans-serif;
+        font-style: normal;
+        font-family: 'Ubuntu';
         padding-top: 10px;
     }
     
@@ -248,12 +253,11 @@ main{
         
         .cajaContactoUno{
             grid-area: area1;
-            background-color: rgb(105, 110, 115);
-            border: solid rgb(0, 0, 0);
             width: 80%;
             height: 80%;
     
             .textoContacto{
+                color: rgb(180, 180, 180);
                 font-style: normal;
                 font-size: 1.5vw;
                 font-family: 'Ubuntu', sans-serif;
@@ -271,12 +275,11 @@ main{
         
         .cajaContactoDos{
             grid-area: area3;
-            background-color: rgb(105, 110, 115);
-            border: solid rgb(0, 0, 0);
             width: 80%;
             height: 80%;
     
             .textoContacto{
+                color: rgb(180, 180, 180);
                 font-style: normal;
                 font-size: 1.5vw;
                 font-family: 'Ubuntu', sans-serif;
