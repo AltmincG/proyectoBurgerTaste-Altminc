@@ -9,21 +9,21 @@ header {
   header .cajaArriba {
     display: flex;
     align-items: center;
-    justify-content: center; }
-  header .logoEncabezado {
-    height: 15%;
-    width: 15%; }
-  header .linkLogo {
-    text-decoration: none;
-    color: black;
-    font-style: normal;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    display: flex;
-    text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    height: 100%;
+    width: 100%; }
+    header .cajaArriba .linkLogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15%;
+      height: 15%; }
+      header .cajaArriba .linkLogo .logoEncabezado {
+        height: 100%;
+        width: 100%; }
   header .listaNav {
     display: flex;
+    list-style-type: none;
     align-items: flex-end;
     justify-content: flex-end;
     text-decoration: none;
@@ -32,17 +32,15 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     line-height: 1.15; }
-  header ul {
-    list-style-type: none; }
-  header li {
-    margin-left: 10px;
-    margin-right: 10px; }
-  header a {
-    text-decoration: none;
-    color: white;
-    font-style: normal;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1vw; }
+    header .listaNav li {
+      margin-left: 10px;
+      margin-right: 10px; }
+    header .listaNav a {
+      text-decoration: none;
+      color: white;
+      font-style: normal;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1vw; }
 
 /* ESTILO DE MAIN */
 main {
@@ -229,7 +227,13 @@ main {
 footer {
   background-image: linear-gradient(0deg, #292727, #747272);
   height: 100px; }
-  footer .logosFooter {
+  footer .redesSociales {
     display: flex;
-    height: 50%;
-    width: 5%; }
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+    footer .redesSociales .logosFooter {
+      height: 50px;
+      width: 50px;
+      padding-right: 5px; }

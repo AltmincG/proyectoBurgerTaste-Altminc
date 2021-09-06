@@ -23,31 +23,28 @@ $altoBarrios: 90%;
 /* ESTILO DE HEADER */
 header{
     background-image: linear-gradient($colorFondosArribaAbajo);
-
     .cajaArriba{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 100%;
+        .linkLogo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            height: 15%;
+            .logoEncabezado{
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
     
-    .logoEncabezado{
-        height: 15%;
-        width: 15%;
-    }
-    
-    .linkLogo{
-        text-decoration: none;
-        color: black;
-        font-style: normal;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 16px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
     .listaNav{
         display: flex;
+        list-style-type: none;
         align-items: flex-end;
         justify-content: flex-end;
         text-decoration: none;
@@ -56,25 +53,24 @@ header{
         font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         line-height: 1.15;
-    }
+        
+        li{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     
-    ul{
-        list-style-type: none;
-    }
-
-    li{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-        font-style: normal;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 1vw;
+        a{
+            text-decoration: none;
+            color: white;
+            font-style: normal;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1vw;
+            
+        }
         
     }
+    
+
     
 }
 /* ESTILO DE MAIN */
@@ -303,14 +299,21 @@ main{
 /* ESTILO DE FOOTER */
 footer{
     background-image: linear-gradient($colorFondosArribaAbajo);
-
     height: 100px;
-
-    .logosFooter{
+    .redesSociales{
         display: flex;
-        height: 50%;
-        width: 5%;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .logosFooter{
+            height: 50px;
+            width: 50px;
+            padding-right: 5px;
+        } 
     }
- 
+       
+    
+    
 }
 
