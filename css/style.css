@@ -3,242 +3,483 @@
 
 /* VARIABLES */
 /* MIXINS */
-/* ESTILO DE HEADER */
-header {
-  background-image: linear-gradient(0deg, #292727, #747272); }
-  header .cajaArriba {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%; }
-    header .cajaArriba .linkLogo {
+@media only screen and (min-width: 600px) {
+  /* ESTILO DE HEADER */
+  header {
+    background-image: linear-gradient(0deg, #292727, #747272); }
+    header .cajaArriba {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 15%;
-      height: 15%; }
-      header .cajaArriba .linkLogo .logoEncabezado {
-        height: 100%;
-        width: 100%; }
-  header .listaNav {
-    display: flex;
-    list-style-type: none;
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-decoration: none;
-    margin: 0;
-    font-style: normal;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    line-height: 1.15; }
-    header .listaNav li a {
+      height: 100%;
+      width: 100%; }
+      header .cajaArriba .linkLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 15%; }
+        header .cajaArriba .linkLogo .logoEncabezado {
+          height: 100%;
+          width: 100%; }
+    header .listaNav {
+      display: flex;
+      list-style-type: none;
+      align-items: flex-end;
+      justify-content: flex-end;
       text-decoration: none;
-      color: #eee4e4;
+      margin: 0;
       font-style: normal;
       font-family: 'Ubuntu', sans-serif;
-      font-size: 1.2vw;
-      padding-right: 10px;
-      padding-left: 10px; }
-    header .listaNav li a:hover {
-      text-decoration: none;
-      color: black;
-      background-color: white;
-      font-style: normal;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 1.2vw; }
-
-/* ESTILO DE MAIN */
-main {
-  background-color: #2e2e2e;
-  height: 100%;
-  /* TITULOS */
-  /* INDEX */
-  /* HAMBURGUESAS */
-  /* ZONAS DE REPARTO */
-  /* SOBRE NOSOTROS */
-  /* CONTACTO */ }
-  main .titulos {
-    font-style: normal;
-    font-size: 2vw;
-    text-align: center;
-    color: black;
-    font-style: normal;
-    font-family: 'Ubuntu';
-    padding-top: 10px; }
-  main h2 {
-    font-style: initial;
-    font-size: 1.7vw;
-    font-family: 'Hind', sans-serif;
-    text-align: center; }
-  main .grillaIndex {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px;
-    grid-template-areas: area1 area2 area3 area4;
-    justify-items: center;
-    align-items: center; }
-    main .grillaIndex .indexFrase {
+      font-size: 16px;
+      line-height: 1.15; }
+      header .listaNav li a {
+        text-decoration: none;
+        color: #eee4e4;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2vw;
+        padding-right: 10px;
+        padding-left: 10px; }
+      header .listaNav li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2vw; }
+  /* ESTILO DE MAIN */
+  main {
+    background-color: #2e2e2e;
+    height: 100%;
+    /* TITULOS */
+    /* INDEX */
+    /* HAMBURGUESAS */
+    /* ZONAS DE REPARTO */
+    /* SOBRE NOSOTROS */
+    /* CONTACTO */ }
+    main .titulos {
       font-style: normal;
       font-size: 2vw;
       text-align: center;
       color: black;
-      font-family: 'Hind', sans-serif;
+      font-style: normal;
+      font-family: 'Ubuntu';
       padding-top: 10px; }
-    main .grillaIndex .indexAmericana {
-      width: 80%;
-      height: 100%; }
-    main .grillaIndex .indexCheese {
-      width: 80%;
-      height: 100%; }
-  main #carouselExampleCaptions {
-    margin-left: 20%;
-    margin-right: 20%; }
-  main .nombresBurger {
-    font-style: initial;
-    font-size: 1.7vw;
-    font-family: 'Hind', sans-serif;
-    text-align: center; }
-  main .grillaBarrios {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 500px 500px;
-    grid-template-areas: "area1 area2 area3" "area4 area5 area6";
-    justify-items: center;
-    align-items: center; }
-    main .grillaBarrios .barrioAguada {
-      grid-area: area1;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioAguada img {
-        border: solid white; }
-    main .grillaBarrios .barrioCentro {
-      grid-area: area2;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioCentro img {
-        border: solid white; }
-    main .grillaBarrios .barrioCordon {
-      grid-area: area3;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioCordon img {
-        border: solid white; }
-    main .grillaBarrios .barrioGoes {
-      grid-area: area4;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioGoes img {
-        border: solid white; }
-    main .grillaBarrios .barrioTresCruces {
-      grid-area: area5;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioTresCruces img {
-        border: solid white; }
-    main .grillaBarrios .barrioReducto {
-      grid-area: area6;
-      width: 70%;
-      height: 90%; }
-      main .grillaBarrios .barrioReducto img {
-        border: solid white; }
-  main .cajaNosotrosUno {
-    display: block;
-    height: 100px;
-    margin: 50px;
-    margin-left: 150px;
-    margin-right: 150px; }
-    main .cajaNosotrosUno .cajaTituloN .tituloNosotros {
-      color: #b4b4b4;
-      margin-top: 10px;
-      font-style: normal;
-      font-size: 1.8vw;
+    main h2 {
+      font-style: initial;
+      font-size: 1.7vw;
       font-family: 'Hind', sans-serif;
       text-align: center; }
-    main .cajaNosotrosUno .cajaTextoN .textoInfo {
-      color: #969696;
+    main .grillaIndex {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 400px;
+      grid-template-areas: "area1 area1" "area2 area3";
+      justify-items: center;
+      align-items: center; }
+      main .grillaIndex .indexFrase {
+        grid-area: area1;
+        font-style: normal;
+        font-size: 2vw;
+        text-align: center;
+        color: black;
+        font-family: 'Hind', sans-serif;
+        padding-top: 10px; }
+      main .grillaIndex .indexAmericana {
+        grid-area: area2;
+        width: 90%;
+        height: 100%; }
+      main .grillaIndex .indexCheese {
+        grid-area: area3;
+        width: 90%;
+        height: 100%; }
+    main #carouselExampleCaptions {
+      margin-left: 20%;
+      margin-right: 20%; }
+    main .nombresBurger {
+      font-style: initial;
+      font-size: 1.7vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+    main .grillaBarrios {
       margin-top: 20px;
-      font-style: normal;
-      font-size: 1.5vw;
-      font-family: 'Hind', sans-serif;
-      text-align: center; }
-  main .cajaNosotrosDos {
-    display: block;
-    height: 100px;
-    padding-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px; }
-    main .cajaNosotrosDos .cajaTituloNDos .tituloNosotros {
-      color: #b4b4b4;
-      margin-top: 10px;
-      font-style: normal;
-      font-size: 1.8vw;
-      font-family: 'Hind', sans-serif;
-      text-align: center; }
-    main .cajaNosotrosDos .cajaTextoNDos .textoInfo {
-      color: #969696;
-      margin-top: 20px;
-      font-style: normal;
-      font-size: 1.5vw;
-      font-family: 'Hind', sans-serif;
-      text-align: center; }
-  main .grillaContacto {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: "area1 area2 area3" "area1 . area3";
-    justify-items: center; }
-    main .grillaContacto .cajaContacto {
-      grid-area: area2; }
-    main .grillaContacto .cajaContactoUno {
-      grid-area: area1;
-      width: 80%;
-      height: 80%; }
-      main .grillaContacto .cajaContactoUno .textoContacto {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-rows: 500px 500px;
+      grid-template-areas: "area1 area2 area3" "area4 area5 area6";
+      justify-items: center;
+      align-items: center; }
+      main .grillaBarrios .barrioAguada {
+        grid-area: area1;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioAguada img {
+          border: solid white; }
+      main .grillaBarrios .barrioCentro {
+        grid-area: area2;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioCentro img {
+          border: solid white; }
+      main .grillaBarrios .barrioCordon {
+        grid-area: area3;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioCordon img {
+          border: solid white; }
+      main .grillaBarrios .barrioGoes {
+        grid-area: area4;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioGoes img {
+          border: solid white; }
+      main .grillaBarrios .barrioTresCruces {
+        grid-area: area5;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioTresCruces img {
+          border: solid white; }
+      main .grillaBarrios .barrioReducto {
+        grid-area: area6;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioReducto img {
+          border: solid white; }
+    main .cajaNosotrosUno {
+      display: block;
+      height: 100px;
+      margin: 50px;
+      margin-left: 150px;
+      margin-right: 150px; }
+      main .cajaNosotrosUno .cajaTituloN .tituloNosotros {
         color: #b4b4b4;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 1.8vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+      main .cajaNosotrosUno .cajaTextoN .textoInfo {
+        color: #969696;
+        margin-top: 20px;
         font-style: normal;
         font-size: 1.5vw;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        margin-top: 50px; }
-      main .grillaContacto .cajaContactoUno .tituloVias {
-        font-style: initial;
-        font-size: 1.6vw;
         font-family: 'Hind', sans-serif;
-        text-align: center;
-        margin-top: 50px; }
-    main .grillaContacto .cajaContactoDos {
-      grid-area: area3;
-      width: 80%;
-      height: 80%; }
-      main .grillaContacto .cajaContactoDos .textoContacto {
+        text-align: center; }
+    main .cajaNosotrosDos {
+      display: block;
+      height: 100px;
+      padding-bottom: 100px;
+      margin-left: 150px;
+      margin-right: 150px; }
+      main .cajaNosotrosDos .cajaTituloNDos .tituloNosotros {
         color: #b4b4b4;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 1.8vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+      main .cajaNosotrosDos .cajaTextoNDos .textoInfo {
+        color: #969696;
+        margin-top: 20px;
         font-style: normal;
         font-size: 1.5vw;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        margin-top: 50px; }
-      main .grillaContacto .cajaContactoDos .tituloVias {
-        font-style: initial;
-        font-size: 1.6vw;
         font-family: 'Hind', sans-serif;
-        text-align: center;
-        margin-top: 50px; }
+        text-align: center; }
+    main .grillaContacto {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 40% 20% 40%;
+      grid-template-rows: 200px 200px;
+      grid-template-areas: "area1 area2 area3" "area1 area4 area3";
+      justify-items: center; }
+      main .grillaContacto .cajaContacto {
+        grid-area: area2; }
+      main .grillaContacto .cajaContactoUno {
+        grid-area: area1;
+        width: 80%;
+        height: 80%; }
+        main .grillaContacto .cajaContactoUno .textoContacto {
+          color: #b4b4b4;
+          font-style: normal;
+          font-size: 1.5vw;
+          font-family: 'Ubuntu', sans-serif;
+          text-align: center;
+          margin-top: 50px; }
+        main .grillaContacto .cajaContactoUno .tituloVias {
+          font-style: initial;
+          font-size: 1.6vw;
+          font-family: 'Hind', sans-serif;
+          text-align: center;
+          margin-top: 50px; }
+      main .grillaContacto .cajaContactoDos {
+        grid-area: area3;
+        width: 80%;
+        height: 80%; }
+        main .grillaContacto .cajaContactoDos .textoContacto {
+          color: #b4b4b4;
+          font-style: normal;
+          font-size: 1.5vw;
+          font-family: 'Ubuntu', sans-serif;
+          text-align: center;
+          margin-top: 50px; }
+        main .grillaContacto .cajaContactoDos .tituloVias {
+          font-style: initial;
+          font-size: 1.6vw;
+          font-family: 'Hind', sans-serif;
+          text-align: center;
+          margin-top: 50px; }
+      main .grillaContacto .linkError a {
+        text-decoration: none;
+        color: #eee4e4;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2vw; }
+  /* ESTILO DE FOOTER */
+  footer {
+    background-image: linear-gradient(0deg, #292727, #747272);
+    height: 100px; }
+    footer .redesSociales {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+      footer .redesSociales .logosFooter {
+        height: 50px;
+        width: 50px;
+        padding-right: 5px; } }
 
-/* ESTILO DE FOOTER */
-footer {
-  background-image: linear-gradient(0deg, #292727, #747272);
-  height: 100px; }
-  footer .redesSociales {
-    display: flex;
+@media only screen and (max-width: 600px) {
+  header {
+    background-image: linear-gradient(0deg, #292727, #747272);
+    height: 400px; }
+    header .cajaArriba {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 65%;
+      width: 100%; }
+      header .cajaArriba .linkLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%; }
+        header .cajaArriba .linkLogo .logoEncabezado {
+          height: 100%;
+          width: 100%; }
+    header .listaNav {
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      font-style: normal;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center; }
+      header .listaNav li a {
+        text-decoration: none;
+        color: #eee4e4;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 4vw;
+        padding-right: 10px;
+        padding-left: 10px; }
+      header .listaNav li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 4vw; }
+  main {
+    background-color: #2e2e2e;
     height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center; }
-    footer .redesSociales .logosFooter {
-      height: 50px;
-      width: 50px;
-      padding-right: 5px; }
+    /* TITULOS */
+    /* INDEX */
+    /* HAMBURGUESAS */
+    /* ZONAS DE REPARTO */
+    /* SOBRE NOSOTROS */
+    /* CONTACTO */ }
+    main .titulos {
+      font-style: normal;
+      font-size: 8vw;
+      text-align: center;
+      color: black;
+      font-style: normal;
+      font-family: 'Ubuntu';
+      padding-top: 10px; }
+    main h2 {
+      font-style: initial;
+      font-size: 6.5vw;
+      font-family: 'Hind', sans-serif;
+      text-align: center; }
+    main .grillaIndex {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-areas: "area1"  "area2" "area3";
+      justify-items: center;
+      align-items: center; }
+      main .grillaIndex .indexFrase {
+        grid: area2;
+        font-style: normal;
+        font-size: 5vw;
+        text-align: center;
+        color: black;
+        font-family: 'Hind', sans-serif; }
+      main .grillaIndex .indexAmericana {
+        grid-area: area1;
+        width: 90%;
+        height: 90%; }
+      main .grillaIndex .indexCheese {
+        grid-area: area3;
+        width: 90%;
+        height: 90%; }
+    main #carouselExampleCaptions {
+      padding-bottom: 20px; }
+    main .grillaBarrios {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 500px 500px 500px 500px 500px 500px;
+      grid-template-areas: "area1"  "area2"  "area3" "area4"  "area5"  "area6";
+      justify-items: center;
+      align-items: center; }
+      main .grillaBarrios .barrioAguada {
+        grid-area: area1;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioAguada img {
+          border: solid white; }
+      main .grillaBarrios .barrioCentro {
+        grid-area: area2;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioCentro img {
+          border: solid white; }
+      main .grillaBarrios .barrioCordon {
+        grid-area: area3;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioCordon img {
+          border: solid white; }
+      main .grillaBarrios .barrioGoes {
+        grid-area: area4;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioGoes img {
+          border: solid white; }
+      main .grillaBarrios .barrioTresCruces {
+        grid-area: area5;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioTresCruces img {
+          border: solid white; }
+      main .grillaBarrios .barrioReducto {
+        grid-area: area6;
+        width: 70%;
+        height: 90%; }
+        main .grillaBarrios .barrioReducto img {
+          border: solid white; }
+    main .cajaNosotrosUno {
+      display: block;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-bottom: 30px; }
+      main .cajaNosotrosUno .cajaTituloN .tituloNosotros {
+        color: #b4b4b4;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 6vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+      main .cajaNosotrosUno .cajaTextoN .textoInfo {
+        color: #969696;
+        margin-top: 20px;
+        font-style: normal;
+        font-size: 5vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+    main .cajaNosotrosDos {
+      display: block;
+      padding-bottom: 30px;
+      margin-left: 50px;
+      margin-right: 50px; }
+      main .cajaNosotrosDos .cajaTituloNDos .tituloNosotros {
+        color: #b4b4b4;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 6vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+      main .cajaNosotrosDos .cajaTextoNDos .textoInfo {
+        color: #969696;
+        margin-top: 20px;
+        font-style: normal;
+        font-size: 5vw;
+        font-family: 'Hind', sans-serif;
+        text-align: center; }
+    main .grillaContacto {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 70px 300px 300px;
+      grid-template-areas: "area1" "area2"  "area3";
+      justify-items: center;
+      justify-items: center;
+      align-items: center; }
+      main .grillaContacto .cajaContacto {
+        grid-area: area1; }
+      main .grillaContacto .cajaContactoUno {
+        grid-area: area2;
+        width: 80%;
+        height: 80%; }
+        main .grillaContacto .cajaContactoUno .textoContacto {
+          color: #b4b4b4;
+          font-style: normal;
+          font-size: 5vw;
+          font-family: 'Ubuntu', sans-serif;
+          text-align: center;
+          margin-top: 20px; }
+        main .grillaContacto .cajaContactoUno .tituloVias {
+          font-style: initial;
+          font-size: 6vw;
+          font-family: 'Hind', sans-serif;
+          text-align: center;
+          margin-top: 10px; }
+      main .grillaContacto .cajaContactoDos {
+        grid-area: area3;
+        width: 80%;
+        height: 80%; }
+        main .grillaContacto .cajaContactoDos .textoContacto {
+          color: #b4b4b4;
+          font-style: normal;
+          font-size: 5vw;
+          font-family: 'Ubuntu', sans-serif;
+          text-align: center;
+          margin-top: 20px; }
+        main .grillaContacto .cajaContactoDos .tituloVias {
+          font-style: initial;
+          font-size: 6vw;
+          font-family: 'Hind', sans-serif;
+          text-align: center;
+          margin-top: 20px; }
+  footer {
+    background-image: linear-gradient(0deg, #292727, #747272);
+    height: 100px; }
+    footer .redesSociales {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+      footer .redesSociales .logosFooter {
+        height: 50px;
+        width: 50px;
+        padding-right: 5px; } }
